@@ -25,7 +25,7 @@ int main(int argc, char* argv[])
         else
             F = (x + c) / ( c * ( x - 10) );
           /* Проверяем заданное условие */
-         if (!((long)floor(a) && (long)floor(b) && (long)floor(c)) != 0)
+         if (!((long)floor(a) & (long)floor(b) & (long)floor(c)) != 0)
             /* Выводим округленное (целое) значение */
          printf("x = %.2f\tF = %.0f\n", x, F);
           else
