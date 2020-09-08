@@ -19,18 +19,28 @@ int main(int argc, char* argv[])
     {
         /* Вычисляем значение функции F, исходя из заданных условий */
         if (x < 0 && b != 0)
+        {
             F = (a * (float)pow(x, 3)) + (b * (float)pow(x, 2)) ;
+            }
         else if (x > 0 && b == 0)
+        {
             F = (x - a) / (x - c);
+            }
         else
+        {
             F = (x + c) / ( c * ( x - 10) );
+            }
           /* Проверяем заданное условие */
          if (!((long)floor(a) & (long)floor(b) & (long)floor(c)) != 0)
+         {
             /* Выводим округленное (целое) значение */
          printf("x = %.2f\tF = %.0f\n", x, F);
+         }
           else
+          {
            /* Выводим вещественное значение */
            printf("x = %.2f\tF = %.2f\n", x, F);
+           }
     }
 return 0;
 }
